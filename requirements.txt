@@ -1,0 +1,21 @@
+numpy==2.4.4
+pandas==2.3.3
+scikit-learn==1.6.1
+econml==0.16.0
+mlflow==3.14.0
+fastapi==0.139.0
+uvicorn==0.51.0
+pydantic==2.13.4
+joblib==1.5.3
+statsmodels>=0.14
+python-dotenv>=1.0
+
+# dev/test
+pytest==9.1.1
+httpx2==2.6.0
+
+# optional (Day 6 multimodal, only needed if OPENAI_API_KEY is set)
+openai>=1.0
+
+# optional (Day 5 AWS Lambda deployment path, see docs/AWS_DEPLOYMENT.md)
+mangum>=0.17
