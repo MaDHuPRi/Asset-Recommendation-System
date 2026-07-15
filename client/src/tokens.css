@@ -1,0 +1,48 @@
+:root {
+  /* Color -- ledger/statement aesthetic: deep ink navy, not the cream/terracotta
+     or near-black/acid-green defaults. Brass accent evokes an old stock ticker. */
+  --ink-950: #0b121a;
+  --ink-900: #101923;
+  --ink-800: #17212c;
+  --ink-700: #202c3a;
+  --line: #2a3644;
+  --text-primary: #e8ecf1;
+  --text-secondary: #8a96a3;
+  --text-tertiary: #5b6774;
+  --brass: #c9a227;
+  --brass-dim: #8a7220;
+  --positive: #3fb78c;
+  --negative: #c9776b;
+
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-body: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--ink-950);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--brass-dim);
+  color: var(--ink-950);
+}
+
+:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 2px;
+}

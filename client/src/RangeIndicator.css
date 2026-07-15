@@ -1,0 +1,53 @@
+.range-indicator {
+  margin: 20px 0 8px;
+}
+
+.range-track {
+  position: relative;
+  height: 8px;
+  background: var(--ink-700);
+  border-radius: 4px;
+}
+
+.range-zero-line {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  width: 1px;
+  background: var(--text-tertiary);
+}
+
+.range-band {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 4px;
+  opacity: 0.35;
+}
+.range-band[data-positive="true"] { background: var(--positive); }
+.range-band[data-positive="false"] { background: var(--negative); }
+
+.range-marker {
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--ink-950);
+}
+.range-marker[data-positive="true"] { background: var(--positive); }
+.range-marker[data-positive="false"] { background: var(--negative); }
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-tertiary);
+  margin-top: 6px;
+}
+
+.range-labels-zero {
+  color: var(--text-secondary);
+}
